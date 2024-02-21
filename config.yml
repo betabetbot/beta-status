@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://pre-prod.efbet.tech
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,9 +143,9 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
+    - name: Pre Prod
+      description: Amazon.
+      closed: false
     - name: Empty Category
     - name: Uncategorized
       untitled: true
@@ -158,14 +158,14 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
+    - name: Platform
+      category: Pre Prod
     - name: Backup Gateway
       category: North Coast
     - name: Website
       description: The web frontend for the application.
       category: Uncategorized
-      link: https://example.com/
+      link: https://pre-prod.efbet.tech/
     - name: API
       description: The guts of the application.
       category: Uncategorized
@@ -269,14 +269,14 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  disableDarkMode: false
+  disableDarkMode: true
 
   # Should we show the logo or the title
   # of the status page?
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  useLogo: true
+  useLogo: false
 
   # Where is the logo located, if one is
   # present at all?
